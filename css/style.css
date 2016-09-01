@@ -16,7 +16,7 @@ footer {
 
 .imagenLogo {
  width: 100%;
- margin-top: 15px;
+ margin-top: 5px;
  margin-left: 20px;
 }
 
@@ -24,6 +24,17 @@ footer {
   padding: 10px;
 }
 
+.imagenfondo {
+  width: 100%;
+}
+
+.containerimagen {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1020px;
+}
 
 
 .fondobotonverde{
@@ -53,6 +64,30 @@ h1.textoblanco{
   color: white;
 }
 
+h1.titulofaq{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  padding: 15px;
+}
+
+.listafaq{
+  list-style-type: none;
+  color: #87C140;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.fondopreguntas {
+  background-color: #DDDDDD;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+
+
 p.textoblanco{
   color: white;
 }
@@ -67,9 +102,9 @@ p.textoblanco{
   border:none;
 }
 
-
 .fondogris {
   background: #A9A8A9;
+  border-radius: 4px;
 }
 
 .fondogrisclaro {
