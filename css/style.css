@@ -110,3 +110,35 @@ p.textoblanco{
 .fondogrisclaro {
   background: #DDDDDD;
 }
+
+.btn-block{
+  border: none;
+  display: inline-block;
+  outline: 0;
+  padding: 6px 10px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none!important;
+  color: #87C140;
+  font-size: 26px;
+  background-color: #DDDDDD;
+  text-align: left;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.alineado-izquierda{
+  text-align: left!important;
+}
+.accordion-content{
+  cursor: auto;
+  display: none;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.accordion-show{
+  visibility: visible;
+  display: block;
+  left:30px;
+}

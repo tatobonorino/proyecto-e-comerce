@@ -4,13 +4,10 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title>Bootstrap Login Form</title>
+    <title>Farma-libre Login</title>
     <meta name="generator" content="Bootply" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
     <link href="../css/style.css" rel="stylesheet">
 </head>
 
@@ -22,7 +19,7 @@
         </div>
 
     </nav>
-    <!--login modal-->
+
     <div id="loginModal" class="modal show" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="fondogris modal-content">
@@ -31,15 +28,17 @@
                     <h1 class="textoblanco text-center">Login</h1>
                 </div>
                 <div class="modal-body">
-                    <form class="form col-md-12 center-block">
+                    <form class="form col-md-12 center-block" name="loginForm" onsubmit="return validateloginForm()">
                         <div class="form-group">
-                            <input type="text" class="form-control input-lg" placeholder="Usuario">
+                            <input type="text" class="form-control input-lg" placeholder="Usuario" name="user">
+                            <p id="loginError1"></p>
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control input-lg" placeholder="Contraseña">
+                            <input type="password" class="form-control input-lg" placeholder="Contraseña" name="password">
+                            <p id="loginError2"></p>
                         </div>
                         <div class="form-group">
-                            <button class="fondobotonverde btn btn-primary btn-lg btn-block">Login</button>
+                            <button class="fondobotonverde btn btn-primary btn-lg btn-block ">Login</button>
                             <span class="padding pull-right"><a href="./registro.html">Registro</a></span>
                             <span class="padding pull-left"><a href="./faq.html">Preguntas Frecuentes</a></span>
                         </div>
@@ -53,9 +52,10 @@
             </div>
         </div>
     </div>
-    <!-- script references -->
+    
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="../js/entrega.js"></script>
 </body>
 
 </html>
