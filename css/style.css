@@ -1,3 +1,144 @@
-body{
-  background:rgb(158, 18, 18);
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.hero-spacer {
+    margin-top: 50px;
+}
+
+.hero-feature {
+    margin-bottom: 30px;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.imagenLogo {
+ width: 100%;
+ margin-top: 5px;
+ margin-left: 20px;
+}
+
+.padding{
+  padding: 10px;
+}
+
+.imagenfondo {
+  width: 100%;
+}
+
+.containerimagen {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1020px;
+}
+
+
+.fondobotonverde{
+background: #87C140;
+border: none;
+}
+
+.marginafuera{
+  margin-right: 15px;
+}
+
+.fondobotonesinicio {
+  background: #F3D111;
+  border-color: white;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.ultimosproductos {
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 30px;
+  color:  #F3D111;
+}
+
+h1.textoblanco{
+  color: white;
+}
+
+h1.titulofaq{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  padding: 15px;
+}
+
+.listafaq{
+  list-style-type: none;
+  color: #87C140;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.fondopreguntas {
+  background-color: #DDDDDD;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+
+
+p.textoblanco{
+  color: white;
+}
+
+.modal-footer {
+  padding: 15px;
+  text-align: right;
+  border: none;
+}
+.modal-header {
+  padding: 15px;
+  border:none;
+}
+
+.fondogris {
+  background: #A9A8A9;
+  border-radius: 4px;
+}
+
+.fondogrisclaro {
+  background: #DDDDDD;
+}
+
+.btn-block{
+  border: none;
+  display: inline-block;
+  outline: 0;
+  padding: 6px 10px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none!important;
+  color: #87C140;
+  font-size: 26px;
+  background-color: #DDDDDD;
+  text-align: left;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.alineado-izquierda{
+  text-align: left!important;
+}
+.accordion-content{
+  cursor: auto;
+  display: none;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.accordion-show{
+  visibility: visible;
+  display: block;
+  left:30px;
 }
