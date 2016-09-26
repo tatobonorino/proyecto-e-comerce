@@ -7,6 +7,25 @@ function mostrarAccordion(id) {
     }
 }
 
+
+function usuarioNuevo(){
+  var xhttp = new XMLHttpRequest();
+  xhttp.open("GET", "https://sprint.digitalhouse.com/nuevoUsuario", true);
+  xhttp.send();
+}
+
+function getUsuarios() {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function(){
+    if (this.readyState == 4 && this.status == 200){
+    var usuarios = JSON.parse(xmlhttp.responseText);
+    alert(usuarios.cantidad);
+  }
+};
+  xmlhttp.open("GET", "https://sprint.digitalhouse.com/getUsuarios", true);
+  xmlhttp.send();
+}
+
 function validateloginForm() {
     var x = document.forms["loginForm"]["user"].value;
     if (x == null || x == "") {
