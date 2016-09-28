@@ -8,6 +8,24 @@ function mostrarAccordion(id) {
 }
 
 
+function mostrarRegistro(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("modal-show") == -1) {
+        x.className += "modal-show";
+    } else {
+        x.className = x.className.replace(" modal-show", "");
+    }
+}
+
+function ocultarRegistro(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("hidden") == -1) {
+      x.className += " hidden";
+  } else {
+      x.className = x.className.replace(" hidden" , "");
+  }
+}
+
 function usuarioNuevo(){
   var xhttp = new XMLHttpRequest();
   xhttp.open("GET", "https://sprint.digitalhouse.com/nuevoUsuario", true);
@@ -19,7 +37,7 @@ function getUsuarios() {
   xmlhttp.onreadystatechange = function(){
     if (this.readyState == 4 && this.status == 200){
     var usuarios = JSON.parse(xmlhttp.responseText);
-    alert(usuarios.cantidad);
+    document.getElementById("cantUsuarios").innerText = usuarios.cantidad;
   }
 };
   xmlhttp.open("GET", "https://sprint.digitalhouse.com/getUsuarios", true);

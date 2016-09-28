@@ -148,3 +148,12 @@ p.textoblanco{
   display: block;
   left:30px;
 }
+
+.hidden{
+  display: none;
+  visibility: hidden;
+}
+.modal-show{
+  display:block;
+  visibility: visible;
+}
