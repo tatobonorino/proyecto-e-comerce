@@ -104,4 +104,7 @@ function validateForm() {
         document.getElementById("signupError8").innerHTML = "Debes ingresar una email valido.";
         return false;
     }
+    usuarioNuevo();
+    ocultarRegistro('ocultaRegistro');
+    mostrarRegistro('Modal');
 }
