@@ -88,7 +88,7 @@
                                 <input type="text" placeholder="Ingrese Email aqui.." class="form-control" name="email">
                                 <p id="signupError8"></p>
                             </div>
-                            <button type="button" class="btn" onclick=" usuarioNuevo(); getUsuarios(); ; ocultarRegistro('ocultaRegistro');mostrarRegistro('Modal');">Enviar</button>
+                            <button type="button" class="btn" onclick=" validateForm();">Enviar</button>
                             <br>
                             <a href="./faq.html">Preguntas Frecuentes</a>
                         </div>
@@ -101,7 +101,7 @@
             <h1 class="textoblanco text-center">Felicitaciones, has sido registrado correctamente!</h1>
         </div>
         <div class="modal-body">
-          <h3>La cantidad de usuarios registrados es </h3><p id="cantUsuarios"></p>
+          <h3>La cantidad de usuarios registrados es </h3><h3 id="cantUsuarios"></h3="">
         </div>
         <div class="modal-footer">
         </div>

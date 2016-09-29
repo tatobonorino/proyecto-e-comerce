@@ -62,46 +62,69 @@ function validateloginForm() {
     }
 }
 
+function limpiarErrores() {
+
+  document.getElementById("signupError1").innerHTML = "";
+  document.getElementById("signupError2").innerHTML = "";
+  document.getElementById("signupError3").innerHTML = "";
+  document.getElementById("signupError4").innerHTML = "";
+  document.getElementById("signupError5").innerHTML = "";
+  document.getElementById("signupError6").innerHTML = "";
+  document.getElementById("signupError7").innerHTML = "";
+  document.getElementById("signupError8").innerHTML = "";
+
+}
+
 function validateForm() {
+  limpiarErrores();
+  var errValidacion = 0;
     var n = document.forms["suForm"]["nombre"].value
     if (n.length < 2) {
         document.getElementById("signupError1").innerHTML = "Debes ingresar una nombre.";
-        return false;
+        errValidacion=1;
     }
     var a = document.forms["suForm"]["apellido"].value
     if (a.length < 2) {
         document.getElementById("signupError2").innerHTML = "Debes ingresar una apellido.";
-        return false;
+        errValidacion=1;
     }
     var d = document.forms["suForm"]["direccion"].value
     if (d.length < 2) {
         document.getElementById("signupError3").innerHTML = "Debes ingresar una direccion.";
-        return false;
+        errValidacion=1;
     }
     var c = document.forms["suForm"]["ciudad"].value
     if (c.length < 2) {
         document.getElementById("signupError4").innerHTML = "Debes ingresar una ciudad.";
-        return false;
+        errValidacion=1;
     }
     var j = document.forms["suForm"]["provincia"].value
     if (j.length < 2) {
         document.getElementById("signupError5").innerHTML = "Debes ingresar una provincia.";
-        return false;
+        errValidacion=1;
     }
     var k = document.forms["suForm"]["codigoPostal"].value
     if (k.length < 4) {
         document.getElementById("signupError6").innerHTML = "Debes ingresar una codigoPostal valido.";
-        return false;
+        errValidacion=1;
     }
     var l = document.forms["suForm"]["numeroTelefono"].value
     if (l.length < 8) {
         document.getElementById("signupError7").innerHTML = "Debes ingresar una numeroTelefono valido.";
-        return false;
+        errValidacion=1;
     }
     var m = document.forms["suForm"]["email"].value
     var expresion = /^[a-z][\w.-]+@\w[\w.-]+\.[\w.-]*[a-z][a-z]$/i;
     if (!expresion.test(m)) {
         document.getElementById("signupError8").innerHTML = "Debes ingresar una email valido.";
-        return false;
+        errValidacion=1;
     }
+    if (errValidacion==1){
+      return false;
+    }
+usuarioNuevo();
+getUsuarios();
+ocultarRegistro('ocultaRegistro');
+mostrarRegistro('Modal');
+
 }
