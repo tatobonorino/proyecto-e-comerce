@@ -4,6 +4,10 @@ body {
 
 .hero-spacer {
     margin-top: 50px;
+    margin-left: 15px;
+    width: 1140px;
+    height: 150px;
+    color: white;
 }
 
 .hero-feature {
@@ -104,7 +108,9 @@ p.textoblanco{
 
 .fondogris {
   background: #A9A8A9;
-  border-radius: 4px;
+  border-radius: 5px;
+  box-shadow: 0 3px 9px rgba(0,0,0,.5);
+  color:white;
 }
 
 .fondogrisclaro {
@@ -142,6 +148,7 @@ p.textoblanco{
   display: block;
   left:30px;
 }
+
 .hidden{
   display: none;
   visibility: hidden;

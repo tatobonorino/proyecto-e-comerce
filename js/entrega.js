@@ -7,6 +7,7 @@ function mostrarAccordion(id) {
     }
 }
 
+
 function mostrarRegistro(id) {
     var x = document.getElementById(id);
     if (x.className.indexOf("modal-show") == -1) {
@@ -36,7 +37,7 @@ function getUsuarios() {
   xmlhttp.onreadystatechange = function(){
     if (this.readyState == 4 && this.status == 200){
     var usuarios = JSON.parse(xmlhttp.responseText);
-      document.getElementById("cantUsuarios").innerText = usuarios.cantidad;
+    document.getElementById("cantUsuarios").innerText = usuarios.cantidad;
   }
 };
   xmlhttp.open("GET", "https://sprint.digitalhouse.com/getUsuarios", true);
