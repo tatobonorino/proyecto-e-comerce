@@ -13,29 +13,29 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-default navbar-fixed-top col-md-12">
-      <div class="container-fluid">
+    <nav class="navbar navbar-default navbar-fixed-top col-md-12">
+        <div class="container-fluid">
 
-          <div class="navbar-left col-md-3">
-              <img class="imagenLogo" src="../imagenes/farma-libre logo pag.png" alt="" />
-          </div>
+            <div class="navbar-left col-md-3">
+                <img class="imagenLogo" src="../imagenes/farma-libre logo pag.png" alt="" />
+            </div>
 
-          <div class="paddingarriba col-md-6">
-              <form class="navbar-form navbar-left">
-                  <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Buscar...">
-                  </div>
-                  <button type="submit" class="fondobotonverde btn btn-default">Buscar</button>
-              </form>
-          </div>
-          <div class="paddingarriba col-md-3">
-                          <ul class="nav navbar-nav navbar-right">
-                  <button type="button" class="fondobotonesinicio btn btn-default navbar-btn" onclick="location.href='login.html'">Login</button>
-              </ul>
-          </div>
-      </div>
+            <div class="paddingarriba col-md-6">
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Buscar...">
+                    </div>
+                    <button type="submit" class="fondobotonverde btn btn-default">Buscar</button>
+                </form>
+            </div>
+            <div class="paddingarriba col-md-3">
+                <ul class="nav navbar-nav navbar-right">
+                    <button type="button" class="fondobotonesinicio btn btn-default navbar-btn" onclick="location.href='login.html'">Login</button>
+                </ul>
+            </div>
+        </div>
 
-  </nav>
+    </nav>
     <div class="container">
         <div id='ocultaRegistro' class="container">
             <h1 class="fondogris well">Registrese</h1>
@@ -77,31 +77,44 @@
                                     <p id="signupError6"></p>
                                 </div>
                             </div>
-
                             <div class="form-group">
                                 <label>Número Telefonico</label>
                                 <input type="text" placeholder="Ingrese Número Telefonico aqui.." class="form-control" name="numeroTelefono">
                                 <p id="signupError7"></p>
                             </div>
-                            <div class="form-group">
+                            <div class="col-sm-4 form-group">
                                 <label>Email</label>
                                 <input type="text" placeholder="Ingrese Email aqui.." class="form-control" name="email">
                                 <p id="signupError8"></p>
                             </div>
-                            <button type="button" class="btn" onclick=" validateForm();">Enviar</button>
-                            <br>
-                            <a href="./faq.html">Preguntas Frecuentes</a>
+                            <div class="col-sm-4 form-group">
+                                <label>Password</label>
+                                <input type="text" placeholder="Ingrese clave aqui.." class="form-control" name="password">
+                                <p id="signupError9"></p>
+                            </div>
+                            <div class="col-sm-4 form-group">
+                                <label>Confirmar Password</label>
+                                <input type="text" placeholder="Confirme la clave aqui.." class="form-control" name="confirmar_password">
+                                <p id="signupError10"></p>
+                            </div>
                         </div>
-                    </form>
+                        <button type="button" class="btn" onclick=" validateForm();">Enviar</button>
+                        <br>
+                        <div class="reset">
+                          <a href="./reset.html">Olvide mi clave.</a>
+                      </div>
                 </div>
+                </form>
             </div>
+        </div>
     </div>
     <div id="Modal" class="fondogris modal-content hidden">
         <div class="modal-header">
             <h1 class="textoblanco text-center">Felicitaciones, has sido registrado correctamente!</h1>
         </div>
         <div class="modal-body">
-          <h3>La cantidad de usuarios registrados es </h3><h3 id="cantUsuarios"></h3="">
+            <h3>La cantidad de usuarios registrados es </h3>
+            <h3 id="cantUsuarios"></h3="">
         </div>
         <div class="modal-footer">
         </div>
@@ -113,5 +126,8 @@
   <div class="col-lg-12">
       <p>Todos los derechos reservados &copy; 2016</p>
   </div>
+  <div class="col-lg-12">
+    <a href="./faq.html">Preguntas Frecuentes</a>
+</div>
 </footer>
 </html>
