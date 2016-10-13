@@ -1,7 +1,7 @@
 <?php
 
 require_once("userRepository.php");
-
+echo "entra en auth.php";
 class Auth {
 
     private $userRepository;
